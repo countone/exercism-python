@@ -21,10 +21,7 @@ class Luhn(object):
         		else:
         			sum+=int(self.num[-i])
 
-        	if sum%10==0:
-        		return True
-        	else:
-        		return False 
+        	return sum%10==0
         else:
         	return False
         	
