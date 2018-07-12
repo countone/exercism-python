@@ -11,11 +11,13 @@ class Luhn(object):
         elif self.num.isdigit():
         	sum=0
         	for i in range(1,len(self.num)+1):
-        		add=int(self.num[-i])*2
-        		if i%2==0 and add>9:
-        			sum+=add-9
-        		elif i%2==0:
-        			sum+=add
+        		
+        		if i%2==0:
+                    add=int(self.num[-i])*2
+        			if add>9:
+                        sum+=add-9
+        		    else:
+        			    sum+=add
         		else:
         			sum+=int(self.num[-i])
 
