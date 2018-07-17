@@ -69,5 +69,4 @@ def is_triplet(triplet):
 	ls.sort()
 	return ls[0]**2+ls[1]**2==ls[2]**2
 
-print(primitive_triplets(4))
 
